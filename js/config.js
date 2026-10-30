@@ -8,7 +8,7 @@ window.LIKINDALINE_CONFIG = {
   // >>> INSERE AQUI O TEU NÚMERO DE WHATSAPP <<<
   // Formato internacional, só dígitos, sem "+", espaços ou traços.
   // Angola: 244 + 9 dígitos. Exemplo de formato: "244923456789"
-  WHATSAPP_NUMBER: "244929731377",
+  WHATSAPP_NUMBER: "244997157422",
 
   // Domínio público da loja, sem "/" final. Ex.: "https://likindaline.vercel.app"
   // Se ficar vazio, usa o endereço atual do navegador.
