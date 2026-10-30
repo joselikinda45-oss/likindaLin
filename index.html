@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="pt-AO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#15191f" />
+    <link rel="icon" href="img/logo-mark.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Manrope:wght@700;800&display=swap"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>LikindaLine | Produtos em Kz com encomenda pelo WhatsApp</title>
+    <meta
+      name="description"
+      content="Descobre os produtos da LikindaLine, consulta preços em kwanzas e encomenda diretamente pelo WhatsApp."
+    />
+    <link rel="canonical" href="https://SEU-DOMINIO.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="LikindaLine" />
+    <meta property="og:locale" content="pt_AO" />
+    <meta
+      property="og:title"
+      content="LikindaLine | Produtos em Kz com encomenda pelo WhatsApp"
+    />
+    <meta
+      property="og:description"
+      content="Fotografias, preços em kwanzas e encomenda direta pelo WhatsApp."
+    />
+    <meta property="og:url" content="https://SEU-DOMINIO.vercel.app/" />
+    <meta
+      property="og:image"
+      content="https://SEU-DOMINIO.vercel.app/img/og-likindaline.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Saltar para o conteúdo</a>
+    <header class="site-header">
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="LikindaLine — página inicial"
+        ><img class="brand-mark" src="img/logo-mark.png" alt="" aria-hidden="true" /><span
+          >Likinda<span class="brand-accent">Line</span></span
+        ></a
+      >
+      <form class="search-form" id="search-form" role="search">
+        <input
+          id="search-input"
+          type="search"
+          placeholder="O que estás à procura?"
+          aria-label="Pesquisar produtos"
+          autocomplete="off"
+        />
+        <button type="submit" aria-label="Pesquisar">&#9906;</button>
+      </form>
+      <a
+        class="admin-shortcut"
+        href="admin.html"
+        aria-label="Abrir painel de administração"
+        title="Painel de administração"
+        >+</a
+      >
+      <a
+        class="button header-whatsapp wa-btn"
+        data-whatsapp
+        href="#"
+        aria-label="Falar connosco pelo WhatsApp"
+        ><img class="whatsapp-icon" src="img/whatsapp.svg" alt="" /><span class="wa-label">WhatsApp</span></a
+      >
+    </header>
+
+    <main id="main-content">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <span class="hero-eyebrow">A tua loja online em Angola</span>
+          <h1 id="hero-title">
+            Compra com confiança.<br /><span>Encomenda em segundos.</span>
+          </h1>
+          <p>
+            Vê as fotografias, confirma o preço em kwanzas e fecha o pedido
+            connosco pelo WhatsApp.
+          </p>
+          <div class="hero-actions">
+            <a href="#catalogo" class="button button-orange">Ver produtos</a>
+            <a class="button button-light wa-btn" data-whatsapp href="#"
+              ><img class="whatsapp-icon" src="img/whatsapp.svg" alt="" />Falar pelo WhatsApp</a
+            >
+          </div>
+          <p class="hero-note">
+            Viste um produto no nosso vídeo? Procura-o abaixo ou pergunta-nos.
+          </p>
+        </div>
+        <div class="hero-art">
+          <a class="hero-card hidden" id="hero-product" href="#catalogo"></a>
+        </div>
+      </section>
+
+      <section class="benefits" aria-label="Vantagens">
+        <div>
+          <span class="benefit-icon" aria-hidden="true">&#9671;</span
+          ><span
+            ><strong>Produtos selecionados</strong
+            ><small>Fotografias reais de cada artigo</small></span
+          >
+        </div>
+        <div>
+          <span class="benefit-icon" aria-hidden="true">&#8361;</span
+          ><span
+            ><strong>Preços em Kz</strong
+            ><small>Valores claros desde o início</small></span
+          >
+        </div>
+        <div>
+          <span class="benefit-icon" aria-hidden="true">&#9679;</span
+          ><span
+            ><strong>Contacto direto</strong
+            ><small>Encomenda pelo WhatsApp</small></span
+          >
+        </div>
+      </section>
+
+      <section
+        class="featured-section hidden"
+        id="destaques"
+        aria-labelledby="destaques-title"
+      >
+        <div class="section-heading">
+          <div>
+            <h2 id="destaques-title">
+              Produtos em destaque<span class="orange-dot">.</span>
+            </h2>
+            <p>Os favoritos da semana.</p>
+          </div>
+        </div>
+        <div class="product-grid" id="featured-grid"></div>
+      </section>
+
+      <section
+        class="catalog-section"
+        id="catalogo"
+        aria-labelledby="catalogo-title"
+      >
+        <div class="section-heading">
+          <div>
+            <h2 id="catalogo-title">
+              Catálogo completo<span class="orange-dot">.</span>
+            </h2>
+            <p>Escolhe uma categoria ou usa a pesquisa.</p>
+          </div>
+          <div class="catalog-tools">
+            <span
+              class="product-count"
+              id="product-count"
+              aria-live="polite"
+            ></span>
+            <label class="sort-control" for="product-sort">
+              <span>Ordenar:</span>
+              <select id="product-sort">
+                <option value="relevance">Relevância</option>
+                <option value="price-asc">Menor preço</option>
+                <option value="price-desc">Maior preço</option>
+                <option value="name">Nome A–Z</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <div
+          class="category-row"
+          id="category-row"
+          role="group"
+          aria-label="Categorias"
+        ></div>
+        <div class="product-grid" id="product-grid">
+          <div class="loading-state">A carregar os produtos...</div>
+        </div>
+        <div class="empty-state hidden" id="empty-state">
+          <span>?</span>
+          <h3>Nenhum produto encontrado</h3>
+          <p>Tenta outra pesquisa ou escolhe outra categoria.</p>
+          <button class="button button-dark" id="clear-filters" type="button">
+            Limpar pesquisa e filtros
+          </button>
+        </div>
+      </section>
+
+      <section
+        class="stories-section hidden"
+        id="clientes-satisfeitos"
+        aria-labelledby="stories-title"
+      >
+        <div class="section-heading">
+          <div>
+            <h2 id="stories-title">
+              Clientes satisfeitos<span class="orange-dot">.</span>
+            </h2>
+            <p>Experiências e momentos partilhados pelos nossos clientes.</p>
+          </div>
+        </div>
+        <p class="stories-status" id="stories-status" role="status"></p>
+        <div class="stories-grid" id="stories-grid"></div>
+      </section>
+
+      <section class="cta-banner" aria-labelledby="cta-title">
+        <div>
+          <h2 id="cta-title">Tens dúvidas? Fala connosco.</h2>
+          <p>
+            Confirma disponibilidade, entrega e forma de pagamento diretamente
+            pelo WhatsApp.
+          </p>
+        </div>
+        <a
+          class="button button-light wa-btn"
+          id="banner-whatsapp"
+          data-whatsapp
+          href="#"
+          ><img class="whatsapp-icon" src="img/whatsapp.svg" alt="" />Falar pelo WhatsApp</a
+        >
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="index.html"
+        ><img class="brand-mark" src="img/logo-mark.png" alt="" aria-hidden="true" /><span
+          >Likinda<span class="brand-accent">Line</span></span
+        ></a
+      >
+      <p>Descobre produtos, consulta o preço e encomenda pelo WhatsApp.</p>
+      <span
+        >&copy; <span data-year></span> LikindaLine. Todos os direitos
+        reservados.</span
+      >
+    </footer>
+    <script src="js/config.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
